@@ -13,18 +13,18 @@ The Box React Starter project is an example repo that includes an Express backen
 3. Create and authorize a Client Credentials Grant Application in the [Box Developer Console](https://account.box.com/developers/services) using the following [Setup Guide.](https://developer.box.com/guides/authentication/client-credentials/client-credentials-setup/)
 4. Copy the generated *_config.json Box application file to the [server directory](/server).
 5. Update the following [server-constants.js](/server-constants.js) file variables
-    * [BOX_CLIENT_ID](https://github.com/kylefernandadams/box-react-starter/blob/main/server-constants.js#L7)
-    * [BOX_CLIENT_SECRET](https://github.com/kylefernandadams/box-react-starter/blob/main/server-constants.js#L8)
-    * [BOX_ENTERPRISE_ID](https://github.com/kylefernandadams/box-react-starter/blob/main/server-constants.js#L9)
-    * [BOX_USER_ID](https://github.com/kylefernandadams/box-react-starter/blob/main/server-constants.js#L10)
-    * [BOX_FILE_ID](https://github.com/kylefernandadams/box-react-starter/blob/main/server-constants.js#L11)
+    * [BOX_CLIENT_ID](https://github.com/unofficialbox/box-react-starter/blob/main/server-constants.js#L7)
+    * [BOX_CLIENT_SECRET](https://github.com/unofficialbox/box-react-starter/blob/main/server-constants.js#L8)
+    * [BOX_ENTERPRISE_ID](https://github.com/unofficialbox/box-react-starter/blob/main/server-constants.js#L9)
+    * [BOX_USER_ID](https://github.com/unofficialbox/box-react-starter/blob/main/server-constants.js#L10)
+    * [BOX_FILE_ID](https://github.com/unofficialbox/box-react-starter/blob/main/server-constants.js#L11)
 6. Run `yarn build` in the root project directory.
 7. Run `yarn start` in the root project directory.
 8. Open you browser and navigate to `http://localhost:8080`
 
 
 ## Disclaimer
-This project is a collection of open source examples and should not be treated as an officially supported product. Use at your own risk. If you encounter any problems, please log an [issue](https://github.com/kylefernandadams/box-react-starter/issues).
+This project is a collection of open source examples and should not be treated as an officially supported product. Use at your own risk. If you encounter any problems, please log an [issue](https://github.com/unofficialbox/box-react-starter/issues).
 
 ## License
 

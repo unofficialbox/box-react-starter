@@ -41,6 +41,9 @@ export default ({ folderId }) => {
                             rootFolderId={rootFolderId}
                             token={token}
                             language={"en_US"}
+                            contentUploaderProps={{
+                                isFolderUploadEnabled: true
+                            }}
                             contentPreviewProps={{
                                 boxAnnotations: boxAnnotations,
                                 showAnnotations: true,
@@ -50,6 +53,10 @@ export default ({ folderId }) => {
                                 showAnnotationsControls: true,
                                 showAnnotationsDrawingCreate: true,
                                 enableThumbnailsSidebar: true,
+                                contentAnswersProps: {
+                                    show: true,
+                                },
+                                
                                 contentSidebarProps: {
                                     detailsSidebarProps: {
                                         hasProperties: true,

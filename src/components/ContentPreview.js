@@ -29,14 +29,9 @@ export default ({ fileId }) => {
                     token={token}
                     hasHeader={true}
                     showAnnotations={true}
-                    // fileOptions={{
-                    //     [fileId]: {
-                    //       startAt: {
-                    //         unit: 'pages',
-                    //         value: 6
-                    //       }
-                    //     }
-                    // }}
+                    contentAnswersProps={{
+                        show: true,
+                    }}
                     contentSidebarProps={{
                         detailsSidebarProps: {
                             hasProperties: true,

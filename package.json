@@ -9,9 +9,10 @@
   "dependencies": {
     "@storybook/addon-knobs": "^7.0.2",
     "@storybook/addons": "^7.0.15",
-    "box-annotations": "^4.1.1-beta.2",
-    "box-node-sdk": "^3.0.0",
-    "box-ui-elements": "^17.1.0",
+    "box-annotations": "^4.1.1-beta.5",
+    "box-node-sdk": "^3.7.1",
+    "box-ui-elements": "^21.0.0",
+    "caniuse-lite": "^1.0.30001614",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",

@@ -15,7 +15,8 @@ app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors({
     origin: [
-        'http://localhost:8080'
+        'http://localhost:8080',
+        'http://api.box.com'
       ]
   }));
 
@@ -53,7 +54,9 @@ app.use(cors({
 app.get('/box/explorer/token-downscope/:folderId', async (req, res) => {
     try {
         const folderId = req.params.folderId;     
-        const downscopedToken = await client.exchangeToken(EXPLORER_SCOPES, `https://api.box.com/2.0/folders/${folderId}`);
+        // const downscopedToken = await client.exchangeToken(EXPLORER_SCOPES, `https://api.box.com/2.0/folders/${folderId}`);
+        const downscopedToken = await client.exchangeToken(EXPLORER_SCOPES);
+
 
         res.setHeader('Content-Type', 'application/json');
         res.status(200).send(downscopedToken);
@@ -109,7 +112,8 @@ app.get('/box/uploader/token-downscope/:folderId', async (req, res) => {
 app.get('/box/preview/token-downscope/:fileId', async (req, res) => {
     try {
         const fileId = req.params.fileId;
-        const downscopedToken = await client.exchangeToken(PREVIEW_SCOPES, `https://api.box.com/2.0/files/${BOX_FILE_ID}`);
+        // const downscopedToken = await client.exchangeToken(PREVIEW_SCOPES, `https://api.box.com/2.0/files/${fileId}`);
+        const downscopedToken = await client.exchangeToken(PREVIEW_SCOPES);
 
         res.setHeader('Content-Type', 'application/json');
         res.status(200).send(downscopedToken);

@@ -34,6 +34,7 @@ export default ({ folderId }) => {
                     canSetShareAccess={true}
                     canUpload={true}
                     canCreateNewFolder={true}
+                    isFolderUploadEnabled={true}
                 />
                 </div>
             </Layout>
